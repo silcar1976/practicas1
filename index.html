@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Contador de Calorias</title>
+</head>
+
+<body>
+    <main>
+        <h1>Contador de Calorias</h1> 
+        <div class="container">
+            <form id="calorie-counter">
+                <label for="budget">Presupuesto</label>
+                <input type="number" min="0" id="budget" placeholder="Presupuesto diario de calorias"required>
+
+                <fieldset id="Desayuno">
+                    <legend>Desayuno</legend>
+                    <div class="input-container"></div>
+                </fieldset>
+                <fieldset id="Almuerzo">
+                    <legend>Almuerzo</legend>
+                    <div class="input-container"></div>
+                </fieldset>
+                <fieldset id="Cena">
+                    <legend>Cena</legend>
+                    <div class="input-container"></div>
+                </fieldset>
+                <fieldset id="Merienda">
+                    <legend>Merienda</legend>
+                    <div class="input-container"></div>
+                </fieldset>
+                <fieldset id="Ejercicio">
+                    <legend>Ejercicio</legend>
+                    <div class="input-container"></div>
+                </fieldset>
+                <div class="controls">
+                    <span>
+                        <label for="entry-dropdown">Agregar comida o ejercicio:</label>
+                        <select id="entry-dropdown" name="options">
+                            <option value="Desayuno" selected>Desayuno</option>
+                            <option value="Almuerzo">Almuerzo</option>
+                            <option value="Cena">Cena</option>
+                            <option value="Merienda">Merienda</option>
+                            <option value="Ejercicio">Ejercicio</option>
+                        </select>
+                        <button type="button" id="add-entry">Agregar entrada</button>
+                    </span>
+                </div>
+                <div>
+                    <button type="submit">Calculate Remaining Calories</button>
+                    <button type="button" id="clear">Limpiar</button>
+                  </div>
+                </form>
+                <div id="output" class="output hide"></div>
+            </form> 
+            <script src="jscrip.js"></script>      
+      </div>
+    </main>
+  </body>
+</html>
