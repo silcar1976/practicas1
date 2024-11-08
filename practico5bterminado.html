@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cafe Menu</title>
+  <link rel="stylesheet" href="practico5b.css">
+</head>
+
+<body>
+  <h1>Registracion Form </h1>
+  <p>Please fill out this form with the requered information</p>
+  <form action="https://register-demo.freecodecamp.org" method="post">
+    <fieldset>
+      <label for="first-name">Enter your first-name:<input id="first-name" type="text" required /> </label>
+      <label for="Last name">Enter your Last-name:<input id="Last-name" type="text" required /></label>
+      <label for="Email">Enter your Email:<input id="email" type="email" required /></label>
+      <label for="Password">Create a new password:<input id="new password" type="password" pattern="[a-z0-5]{8,}"
+          required /></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Account type (required)</legend>
+      <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline"
+          checked /> Personal</label>
+      <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" />
+        Business</label>
+    </fieldset>
+    <fieldset>
+      <label>Sube una foto de perfil: <input type="file" /></label>
+      <label>Ingrese su edad (anos): <input type="number" min="13" max="120" /></label>
+      <label> Como te enteraste de nosotros?
+        <select>
+          <option value=""> (seleccione una)</option>
+          <option value="1">News</option>
+          <option value="2">YouTube Channel</option>
+          <option value="3">Forum</option>
+          <option value="4">Otros</option>
+        </select>
+        <label for="bio">Proporcionar una biografia:
+          <textarea id="bio" rows="3" cols="30" placeholder="Me gusta codificar"></textarea>
+        </label>
+      </fieldset>
+        <label for="Terms and conditions">
+          <input id="Terms and conditions" type="checkbox" required>"Acepto los terminos y condiciones"
+          <a href="https://freecodecamp.org/new/terms-of-service/">terminos y condiciones</a>
+        </label>
+        <input type="submit" value="Submit" />
+
+      </form> 
+</body>
+</html>
